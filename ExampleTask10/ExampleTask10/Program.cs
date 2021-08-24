@@ -4,13 +4,13 @@ namespace ExampleTask10
 {
     class Weapon
     {
-        private const byte s_hasNotBullets = 0;
-        private const byte s_gunShot = 1;
+        private const byte HasNotBullets = 0;
+        private const byte GunShot = 1;
         
         private int _bullets;
 
-        public bool CanShoot() => _bullets > s_hasNotBullets;
+        public bool CanShoot() => _bullets > HasNotBullets;
 
-        public void Shoot() => _bullets -= s_gunShot;
+        public void Shoot() => _bullets -= GunShot;
     }
 }
