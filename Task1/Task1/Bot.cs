@@ -10,9 +10,8 @@
             _weapon = weapon;
         }
 
-        public void OnSeePlayer(ITarget target)
+        public void OnSeePlayer()
         {
-            _target = target;
             _weapon.Fire(_target);
         }
     }

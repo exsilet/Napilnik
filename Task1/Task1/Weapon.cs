@@ -1,4 +1,6 @@
-﻿namespace Task1
+﻿using System;
+
+namespace Task1
 {
     internal class Weapon
     {
@@ -13,10 +15,14 @@
 
         public void Fire(ITarget target)
         {
-            if (_bullets > 0 && !target.IsAlive)
+            if (_bullets > 0)
             {
                 target.TakeDamage(_damage);
                 _bullets--;
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException("нет задачи что делать если кончились патроны");
             }
         }
     }
