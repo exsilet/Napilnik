@@ -4,7 +4,7 @@ namespace ExampleTask1
 {
     class Program
     {
-        public static int ComparingNumbers(int a, int b, int c)
+        public static int GetNumber(int a, int b, int c)
         {
             if (a < b)
                 return b;
