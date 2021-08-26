@@ -4,8 +4,7 @@ namespace ExampleTask10
 {
     class Weapon
     {
-        private const byte HasNotBullets = 0;
-        private const byte GunShot = 1;
+        private const byte HasNotBullets = 0, GunShot = 1;
         
         private int _bullets;
 
