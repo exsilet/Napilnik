@@ -1,2 +1,2 @@
 public void Shoot(Player player) {}
-public string Find(int number) {}
+public string Find(int index) {}
