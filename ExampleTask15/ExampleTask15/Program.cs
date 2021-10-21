@@ -10,7 +10,7 @@ namespace ExampleTask15
         private class Follow { }
         private class Unit
         {
-            public IReadOnlyCollection<Unit> Units { get; private set; }
+            public IReadOnlyCollection<Unit> Numbers { get; private set; }
         }
     }
 }
