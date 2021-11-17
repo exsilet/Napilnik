@@ -15,15 +15,13 @@ namespace Task1
 
         public void Fire(ITarget target)
         {
-            if (_bullets > 0)
+            if (_bullets <= 0)
             {
-                target.TakeDamage(_damage);
-                _bullets--;
+                throw new InvalidOperationException();
             }
-            else
-            {
-                throw new ArgumentOutOfRangeException("нет задачи на то когда кончатся патроны");
-            }
+
+            target.TakeDamage(_damage);
+            _bullets--;
         }
     }
 }

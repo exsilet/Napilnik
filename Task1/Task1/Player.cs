@@ -22,10 +22,16 @@ namespace Task1
         {
             if (!IsAlive)
             {
-                throw new ArgumentOutOfRangeException();
+                throw new InvalidOperationException();
             }
 
             _health -= damage;
+
+            if (_health <= damage)
+            {
+                throw new InvalidOperationException();
+            }
+
             if (_health <= 0)
             {
                 _health = 0;
