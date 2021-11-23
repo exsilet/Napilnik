@@ -14,28 +14,18 @@ namespace Task1
             _health = health;
         }
 
-        public event Action OnDie;
-
-        public bool IsAlive => _health > 0;
-
         public void TakeDamage(int damage)
         {
-            if (!IsAlive)
+            if (damage < 0)
             {
                 throw new InvalidOperationException();
             }
 
             _health -= damage;
 
-            if (_health < damage)
-            {
-                throw new InvalidOperationException();
-            }
-
-            if (_health <= 0)
+            if (_health < 0)
             {
                 _health = 0;
-                OnDie?.Invoke();
             }
         }
     }
