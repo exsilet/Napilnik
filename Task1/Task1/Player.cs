@@ -27,7 +27,7 @@ namespace Task1
 
             _health -= damage;
 
-            if (_health <= damage)
+            if (_health < damage)
             {
                 throw new InvalidOperationException();
             }
