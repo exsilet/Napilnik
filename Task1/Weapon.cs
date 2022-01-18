@@ -13,7 +13,7 @@ namespace Task1
             _bullets = bullets;
         }
 
-        public void Fire(ITarget target)
+        public void Fire(IDamageble target)
         {
             if (_bullets <= 0)
             {

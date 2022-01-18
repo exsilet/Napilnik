@@ -1,8 +1,8 @@
 ﻿namespace Task1
 {
-    public interface ITarget
+    public interface IDamageble
     {
-        bool IsAlive { get; }
+        bool CanRecieveDamage { get; }
 
         void TakeDamage(int damage);
     }
