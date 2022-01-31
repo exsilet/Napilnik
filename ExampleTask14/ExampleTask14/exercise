@@ -1,0 +1,6 @@
+Берите имена из предметной области. Не Мяуколо, а Кошка.
+
+class BulletsThrower
+{
+    public void Shoot() { }
+}
